@@ -16,8 +16,7 @@ namespace UniversalAudioPlayer {
         }
 
         private void Tick_Tick(object sender, EventArgs e) {
-            string hours, minutes, seconds, fractionalSeconds;
-            SecondsToHHMMSS(Convert.ToSingle(textBox1.Text), out hours, out minutes, out seconds, out fractionalSeconds);
+            SecondsToHHMMSS(Convert.ToSingle(textBox1.Text), out string hours, out string minutes, out seconds, out fractionalSeconds);
             TimeLabel.Text = $"{hours}:{minutes}:{seconds}{fractionalSeconds}{Environment.NewLine}/{Environment.NewLine}0: 0:00.00";
         }
 

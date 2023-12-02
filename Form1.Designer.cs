@@ -25,11 +25,10 @@
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             this.Tick = new System.Windows.Forms.Timer(this.components);
-            this.AudioLengthTablePanel = new System.Windows.Forms.TableLayoutPanel();
-            this.CurrentTimeLabel = new System.Windows.Forms.Label();
-            this.TotalTimeLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.AudioLengthTablePanel.SuspendLayout();
+            this.TimeLabel = new System.Windows.Forms.Label();
+            this.TimePanel = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TimePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Tick
@@ -38,106 +37,34 @@
             this.Tick.Interval = 10;
             this.Tick.Tick += new System.EventHandler(this.Tick_Tick);
             // 
-            // AudioLengthTablePanel
+            // TimeLabel
             // 
-            this.AudioLengthTablePanel.ColumnCount = 1;
-            this.AudioLengthTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.AudioLengthTablePanel.Controls.Add(this.TotalTimeLabel, 0, 2);
-            this.AudioLengthTablePanel.Controls.Add(this.CurrentTimeLabel, 0, 0);
-            this.AudioLengthTablePanel.Controls.Add(this.label1, 0, 1);
-            this.AudioLengthTablePanel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.AudioLengthTablePanel.Location = new System.Drawing.Point(12, 25);
-            this.AudioLengthTablePanel.Name = "AudioLengthTablePanel";
-            this.AudioLengthTablePanel.RowCount = 3;
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.AudioLengthTablePanel.Size = new System.Drawing.Size(200, 100);
-            this.AudioLengthTablePanel.TabIndex = 0;
+            this.TimeLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TimeLabel.AutoSize = true;
+            this.TimeLabel.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimeLabel.Location = new System.Drawing.Point(59, 12);
+            this.TimeLabel.Name = "TimeLabel";
+            this.TimeLabel.Size = new System.Drawing.Size(109, 75);
+            this.TimeLabel.TabIndex = 0;
+            this.TimeLabel.Text = "0:00:00.00\r\n/\r\n0:00:00.00";
+            this.TimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CurrentTimeLabel
+            // TimePanel
             // 
-            this.CurrentTimeLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.CurrentTimeLabel.AutoSize = true;
-            this.CurrentTimeLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CurrentTimeLabel.Location = new System.Drawing.Point(32, 17);
-            this.CurrentTimeLabel.Margin = new System.Windows.Forms.Padding(0, 17, 0, 0);
-            this.CurrentTimeLabel.Name = "CurrentTimeLabel";
-            this.CurrentTimeLabel.Size = new System.Drawing.Size(135, 19);
-            this.CurrentTimeLabel.TabIndex = 0;
-            this.CurrentTimeLabel.Text = "CurrentTimeLabel";
-            this.CurrentTimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TimePanel.Controls.Add(this.TimeLabel);
+            this.TimePanel.Location = new System.Drawing.Point(12, 24);
+            this.TimePanel.Name = "TimePanel";
+            this.TimePanel.Size = new System.Drawing.Size(200, 100);
+            this.TimePanel.TabIndex = 0;
             // 
-            // TotalTimeLabel
+            // textBox1
             // 
-            this.TotalTimeLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TotalTimeLabel.AutoSize = true;
-            this.TotalTimeLabel.Location = new System.Drawing.Point(61, 74);
-            this.TotalTimeLabel.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.TotalTimeLabel.Name = "TotalTimeLabel";
-            this.TotalTimeLabel.Size = new System.Drawing.Size(78, 13);
-            this.TotalTimeLabel.TabIndex = 1;
-            this.TotalTimeLabel.Text = "TotalTimeLabel";
-            this.TotalTimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(94, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(11, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "/";
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox1.Location = new System.Drawing.Point(51, 234);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "60";
             // 
             // Form1
             // 
@@ -145,23 +72,26 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(224, 361);
-            this.Controls.Add(this.AudioLengthTablePanel);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TimePanel);
             this.Font = new System.Drawing.Font("Tahoma", 8F);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form1";
             this.Text = "Audio Player";
-            this.AudioLengthTablePanel.ResumeLayout(false);
-            this.AudioLengthTablePanel.PerformLayout();
+            this.Load += new System.EventHandler(this.DoTimeResize);
+            this.Resize += new System.EventHandler(this.DoTimeResize);
+            this.TimePanel.ResumeLayout(false);
+            this.TimePanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Timer Tick;
-        private System.Windows.Forms.TableLayoutPanel AudioLengthTablePanel;
-        private System.Windows.Forms.Label CurrentTimeLabel;
-        private System.Windows.Forms.Label TotalTimeLabel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label TimeLabel;
+        private System.Windows.Forms.Panel TimePanel;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

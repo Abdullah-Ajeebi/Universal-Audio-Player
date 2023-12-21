@@ -120,4 +120,27 @@
   <metadata name="Tick.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>90, 13</value>
+  </metadata>
+  <data name="openFileDialog.Filter" xml:space="preserve">
+    <value>Audio Files|*.3g2;*.3gp;*.aac;*.ac3;*.adt;*.adts;*.aif;*.aifc;*.aiff;*.amr;*.ape;*.au;*.caf;*.dts;*.flac;*.m4a;*.m4b;*.m4r;*.mid;*.midi;*.mkv;*.mlp;*.mp2;*.mp3;*.mpc;*.ogg;*.opus;*.ra;*.ram;*.rm;*.rmi;*.s3m;*.spx;*.tta;*.voc;*.vqf;*.w64;*.wav;*.wma;*.wv;*.xm;*.xmf|All Files|*.*</value>
+  </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>223, 13</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="playItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vgAADr4B6kKxwAAAAb5JREFUeF7lmz2KAkEYRFUQTIzMDI2NzT2AF/AG3sAbeANv4AU8gLmxsaGZkYkg
+        yOdusLAsb38s+2eWKnjJm+kOBHWqp7v1ljAHpRMonUDpBEqJ9Xod3W4XrzUYlBLv2e12MRgM8HpDQSnx
+        kePxGOPxGO9pICglPudyucRsNsP7GgZKia+53++xXC6j3W7j/Q0BpcR32Ww20ev1cEwDQCnxU/b7fQyH
+        QxxXGZQSv+V0OsVkMsGxFUEp8Zdcr9eYz+c4vhIoJZ7JarWKTqeD8xQGpcSz2W630e/3ca6CoJRQcjgc
+        YjQa4XyFQCmh5nw+x3Q6xTkLgFLildxut1gsFjhvZlBKpEiFRolSIlUKN0qUEilTsFGilEidQo0SpUSO
+        FGiUKCVyJmOjRCmRO5kaJUqJEsnQKFFKlEriRolSonQSNUqUEjWSoFGilKiVFxslSomaeaFRopSoHbFR
+        opSoHesPwPorYP0jaP03aPsgZP0obF2GrOuw7YKI9ZKY9aKo9bK49YsR21dj1i9HrV+PW2+QsN4iY7tJ
+        ynqbnPVGSeutsrabpa23y1sfmLA+MmN9aMr+2Nw/BaUTKJ1AaUIrHtNCDnrpn2wQAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>
